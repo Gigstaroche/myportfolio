@@ -1,53 +1,84 @@
-# Felix Mutai - Portfolio Website
+# Felix Mutai - Personal Portfolio
 
-A modern, responsive portfolio website showcasing the work and skills of Felix Mutai, a Creative Director and UI/UX Designer from Nairobi, Kenya.
+A modern, responsive vCard-style personal portfolio website showcasing the work and skills of Felix Mutai, a Creative Director and UI/UX Designer from Nairobi, Kenya.
 
 ## 🌟 Features
 
+- **vCard Design**: Clean, professional sidebar layout with personal information
 - **Responsive Design**: Optimized for all devices and screen sizes
-- **Modern UI/UX**: Clean, professional design with smooth animations
-- **Interactive Elements**: Engaging user experience with hover effects and transitions
-- **Portfolio Showcase**: Dedicated sections for projects and skills
-- **Contact Integration**: Easy-to-use contact forms and information
+- **Interactive Navigation**: Smooth page transitions between sections
+- **Portfolio Showcase**: Filterable project gallery with categories
+- **Resume Section**: Detailed education and experience timeline
+- **Contact Integration**: Embedded map and contact form
+- **Modern UI/UX**: Contemporary design with smooth animations
 
 ## 📱 Pages
 
-- **Home (index.html)**: Main landing page with about section, skills, and resume
-- **Services (services.html)**: Detailed overview of offered services
-- **Contact (contact.html)**: Contact form and information
-- **Project Details (project-details.html)**: Individual project showcases
+- **About**: Personal introduction and services offered
+- **Resume**: Education and professional experience
+- **Portfolio**: Showcase of projects with filtering
+- **Contact**: Contact form and location map
 
 ## 🛠️ Technologies Used
 
 - **HTML5**: Semantic markup and modern web standards
-- **CSS3**: Advanced styling with animations and responsive design
-- **JavaScript**: Interactive functionality and smooth user experience
-- **Bootstrap**: Responsive grid system and components
-- **Font Awesome**: Professional icon library
-- **Google Fonts**: Typography (Poppins & Plus Jakarta Sans)
+- **CSS3**: Advanced styling with custom properties and animations
+- **JavaScript**: Interactive functionality and DOM manipulation
+- **Ionicons**: Professional icon library
+- **Google Fonts**: Typography (Poppins)
+- **Google Maps**: Embedded location display
 
 ## 📂 Project Structure
 
 ```text
 myportfolio/
-├── index.html              # Main homepage
-├── services.html           # Services page
-├── contact.html           # Contact page
-├── project-details.html   # Project details template
-├── css/                   # Stylesheets
-│   ├── style.css         # Main stylesheet
-│   ├── bootstrap.min.css # Bootstrap framework
-│   └── plugins.css       # Plugin styles
-├── js/                   # JavaScript files
-│   ├── scripts.js        # Custom scripts
-│   └── plugins.js        # Plugin scripts
-├── images/               # Image assets
-└── fonts/               # Font files
+├── index.html              # Main single-page application
+├── assets/                 # Static assets
+│   ├── css/               # Stylesheets
+│   │   └── style.css     # Main stylesheet
+│   ├── images/           # Image assets
+│   │   ├── my-avatar.png # Profile avatar
+│   │   ├── project-1.jpg # Project screenshots
+│   │   ├── project-2.jpg
+│   │   ├── project-3.jpg
+│   │   └── project-4.png
+│   ├── js/               # JavaScript files
+│   │   └── script.js     # Main script
+│   └── Carriculum vitae.pdf # CV download
+├── .gitignore            # Git ignore rules
+└── README.md             # Project documentation
 ```
 
 ## 👨‍💼 About Felix Mutai
 
 Felix Mutai is a Creative Director and UI/UX Designer based in Nairobi, Kenya, specializing in:
+- UI/UX Design
+- Web Development
+- Graphic Design
+- Quality Assurance
+
+## 🚀 Getting Started
+
+### Prerequisites
+- A modern web browser
+- Local web server (optional, for local development)
+
+### Running Locally
+1. Clone or download the repository
+2. Open `index.html` in your web browser, or
+3. Use a local server:
+   ```bash
+   # Using Python
+   python3 -m http.server 8000
+   
+   # Using Node.js (if available)
+   npx serve .
+   ```
+4. Visit `http://localhost:8000` in your browser
+
+## � License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 - **UI/UX Design** (95% proficiency)
 - **Web Development** (90% proficiency)
