@@ -1,0 +1,17 @@
+<svg width="120" height="40" viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="commerceGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF9800;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F57C00;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- E-Commerce Logo -->
+  <rect x="0" y="10" width="26" height="20" rx="13" fill="url(#commerceGradient)"/>
+  <circle cx="13" cy="20" r="8" fill="white"/>
+  <path d="M8 20 L13 15 L18 20 L13 25 Z" fill="url(#commerceGradient)"/>
+  <circle cx="13" cy="20" r="2" fill="url(#commerceGradient)"/>
+
+  <text x="34" y="18" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">E-COM</text>
+  <text x="34" y="30" font-family="Arial, sans-serif" font-size="10" fill="#f39c12">MARKET</text>
+</svg>

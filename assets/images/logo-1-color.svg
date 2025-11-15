@@ -1,0 +1,22 @@
+<svg width="120" height="40" viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="happyGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4CAF50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#45a049;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Happy Happier Logo -->
+  <rect x="0" y="8" width="32" height="24" rx="4" fill="url(#happyGradient)"/>
+  <circle cx="8" cy="14" r="2" fill="white"/>
+  <circle cx="16" cy="14" r="2" fill="white"/>
+  <circle cx="24" cy="14" r="2" fill="white"/>
+  <circle cx="8" cy="20" r="2" fill="white"/>
+  <circle cx="16" cy="20" r="2" fill="white"/>
+  <circle cx="24" cy="20" r="2" fill="white"/>
+  <circle cx="8" cy="26" r="2" fill="white"/>
+  <circle cx="16" cy="26" r="2" fill="white"/>
+  <circle cx="24" cy="26" r="2" fill="white"/>
+
+  <text x="40" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#2c3e50">Happy Happier</text>
+</svg>

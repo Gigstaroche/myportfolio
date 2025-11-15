@@ -5,12 +5,75 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Felix Mutai - Creative Director & UI/UX Designer</title>
 
-  <!--
-    - favicon
-  -->
+  <!-- SEO Meta Tags -->
+  <title>Felix Mutai - Creative Director & UI/UX Designer | Portfolio</title>
+  <meta name="description" content="Creative Director and UI/UX Designer from Nairobi, Kenya. Specializing in modern web development, Vue.js, React, and innovative digital solutions. View my portfolio and get in touch.">
+  <meta name="keywords" content="Felix Mutai, UI/UX Designer, Creative Director, Web Developer, Vue.js, React, Nairobi, Kenya, Portfolio, Digital Design">
+  <meta name="author" content="Felix Mutai">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://felixmutai.dev/">
+  <meta property="og:title" content="Felix Mutai - Creative Director & UI/UX Designer">
+  <meta property="og:description" content="Creative Director and UI/UX Designer from Nairobi, Kenya. Specializing in modern web development and innovative digital solutions.">
+  <meta property="og:image" content="https://felixmutai.dev/assets/images/Gig01.jpg">
+  <meta property="og:site_name" content="Felix Mutai Portfolio">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://felixmutai.dev/">
+  <meta property="twitter:title" content="Felix Mutai - Creative Director & UI/UX Designer">
+  <meta property="twitter:description" content="Creative Director and UI/UX Designer from Nairobi, Kenya. Specializing in modern web development and innovative digital solutions.">
+  <meta property="twitter:image" content="https://felixmutai.dev/assets/images/Gig01.jpg">
+
+  <!-- Favicon -->
   <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="./assets/images/Gig01.jpg">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://felixmutai.dev/">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Felix Mutai",
+    "jobTitle": "Creative Director & UI/UX Designer",
+    "description": "Creative Director and UI/UX Designer from Nairobi, Kenya, specializing in modern web development and digital innovation.",
+    "url": "https://felixmutai.dev/",
+    "image": "https://felixmutai.dev/assets/images/Gig01.jpg",
+    "sameAs": [
+      "https://linkedin.com/in/felix-mutai",
+      "https://behance.net/felixmutai",
+      "https://dribbble.com/felixmutai",
+      "https://github.com/Gigstaroche"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Nairobi",
+      "addressCountry": "Kenya"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+254-790-097-839",
+      "email": "info@mutaidev.co.ke",
+      "contactType": "Professional"
+    },
+    "knowsAbout": [
+      "UI/UX Design",
+      "Web Development",
+      "Vue.js",
+      "React",
+      "JavaScript",
+      "Figma",
+      "Creative Direction"
+    ]
+  }
+  </script>
 
   <!--
     - custom css link
@@ -74,7 +137,7 @@
             <div class="contact-info">
               <p class="contact-title">Email</p>
 
-              <a href="mailto:gmutai.felix@gmail.com" class="contact-link">gmutai.felix@gmail.com</a>
+              <a href="mailto:info@mutaidev.co.ke" class="contact-link">info@mutaidev.co.ke</a>
             </div>
 
           </li>
@@ -145,7 +208,23 @@
             </a>
           </li>
 
+          <li class="social-item">
+            <a href="https://wa.me/qr/ICOWLSVFQZIRO1" class="social-link" target="_blank">
+              <ion-icon name="logo-whatsapp"></ion-icon>
+            </a>
+          </li>
+
         </ul>
+
+        <div class="separator"></div>
+
+        <div class="theme-toggle">
+          <button class="theme-toggle-btn" data-theme-toggle-btn>
+            <ion-icon name="moon-outline" class="moon-icon"></ion-icon>
+            <ion-icon name="sunny-outline" class="sun-icon"></ion-icon>
+            <span class="theme-text">Dark Mode</span>
+          </button>
+        </div>
 
       </div>
 
@@ -170,7 +249,7 @@
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>About</button>
+            <button class="navbar-link  active" data-nav-link>About</button>
           </li>
 
           <li class="navbar-item">
@@ -227,7 +306,7 @@
         -->
 
         <section class="resume-download">
-          <a href="./assets/Carriculum vitae.pdf" download="Felix_Mutai_CV.pdf" class="btn btn-primary">
+          <a href="./assets/Fainal Resume.pdf" download="Felix_Mutai_Resume.pdf" class="btn btn-primary">
             <ion-icon name="download-outline"></ion-icon>
             Download Resume
           </a>
@@ -247,11 +326,8 @@
             <li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="design icon" width="40">
-              </div>
-
-              <div class="service-content-box">
+                <img src="./assets/images/icon-design.svg" alt="UI/UX Design icon" width="40">
+              </div>              <div class="service-content-box">
                 <h4 class="h4 service-item-title">UI/UX Design</h4>
 
                 <p class="service-item-text">
@@ -331,21 +407,22 @@
 
         <section class="testimonials">
 
-          <ul class="testimonials-list has-scrollbar">
+                    <ul class="testimonials-list has-scrollbar">
 
             <li class="testimonials-item">
               <div class="content-card" data-testimonials-item>
 
                 <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                  <img src="./assets/images/avatar-1.png" alt="Harrison - Project Manager" width="60" data-testimonials-avatar>
                 </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Sajaad Iqbal</h4>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Harrison</h4>
 
                 <div class="testimonials-text" data-testimonials-text>
                   <p>
-                    Working with Felix as a fellow developer has been good. He has a solid understanding of JavaScript and Vue.js,
-                    and is always willing to learn and improve. Good team player with growing technical skills.
+                    Felix delivered exceptional work on our Happy Happier cleaning services platform. His attention to detail
+                    and user-centered design approach resulted in a professional website that exceeded our expectations.
+                    Highly recommended for web development projects.
                   </p>
                 </div>
 
@@ -356,15 +433,16 @@
               <div class="content-card" data-testimonials-item>
 
                 <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
+                  <img src="./assets/images/avatar-2.png" alt="Joseph - Senior Developer" width="60" data-testimonials-avatar>
                 </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Harizon</h4>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Joseph</h4>
 
                 <div class="testimonials-text" data-testimonials-text>
                   <p>
-                    Felix did a good job on our Happy Happier project. He created a functional cleaning services website
-                    that meets our basic requirements. Shows promise and is improving his skills.
+                    Collaborating with Felix on our Vue.js application was a pleasure. His expertise in modern JavaScript
+                    frameworks and clean coding practices made the development process smooth and efficient. He consistently
+                    delivers high-quality work and is a valuable team member.
                   </p>
                 </div>
 
@@ -375,34 +453,16 @@
               <div class="content-card" data-testimonials-item>
 
                 <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                  <img src="./assets/images/avatar-3.png" alt="Sarah Chen - Tech Lead" width="60" data-testimonials-avatar>
                 </figure>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Emily evans</h4>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Sarah Chen</h4>
 
                 <div class="testimonials-text" data-testimonials-text>
                   <p>
-                    Felix is enthusiastic about learning new technologies. He's made good progress with Vue.js and Nuxt.js
-                    and contributes effectively to our projects. Eager to grow and develop his skills further.
-                  </p>
-                </div>
-
-              </div>
-            </li>
-
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-4.png" alt="Henry william" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Henry william</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Felix worked on our e-procurement system and provided solid contributions to the development process.
-                    He has basic knowledge of both frontend and backend development and is learning to work effectively in a team.
+                    Felix demonstrated strong technical skills and professionalism during our internship program at Kinetics Technologies.
+                    His work on the e-procurement system showed excellent problem-solving abilities and a commitment to delivering
+                    robust, scalable solutions. A promising talent in web development.
                   </p>
                 </div>
 
@@ -485,10 +545,22 @@
 
               <h4 class="h4 timeline-item-title">E-Procurement Application Developer</h4>
 
-              <span>2025 — Present</span>
+              <span>2024 (3 months) - <a href="https://kinetics.co.ke/" target="_blank" style="color: #7f8c8d; text-decoration: none;">Kinetics Technologies</a></span>
 
               <p class="timeline-text">
-                Collaborated on developing a comprehensive e-procurement application using modern web technologies. Contributed to both frontend and backend development, focusing on user experience and system efficiency.
+                Completed a 3-month internship at Kinetics Technologies developing an e-procurement application using modern web technologies. Contributed to both frontend and backend development, focusing on user experience and system efficiency.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Assistant System Administrator</h4>
+
+              <span>2023 (6 months) - Amurt Africa</span>
+
+              <p class="timeline-text">
+                Served as assistant system administrator at Amurt Africa for 6 months, beginning with a 3-month attachment period followed by a 3-month internship. Managed IT infrastructure, provided technical support, and contributed to system maintenance and optimization.
               </p>
 
             </li>
@@ -497,7 +569,7 @@
 
               <h4 class="h4 timeline-item-title">Quality Assurance</h4>
 
-              <span>2021 — Present</span>
+              <span>2021 — Present - Utest (Active) & Remotask (Former)</span>
 
               <p class="timeline-text">
                 Ensuring software quality through comprehensive testing methodologies. Specialized in functional, usability, and compatibility testing across multiple platforms and devices.
@@ -544,17 +616,17 @@
 
               <div class="title-wrapper">
                 <h5 class="h5">JavaScript</h5>
-                <data value="75">75%</data>
+                <data value="80">80%</data>
               </div>
 
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 75%;"></div>
+                <div class="skill-progress-fill" style="width: 80%;"></div>
               </div>            </li>
 
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">Graphic Design</h5>
+                <h5 class="h5">Vue.js</h5>
                 <data value="75">75%</data>
               </div>
 
@@ -567,12 +639,12 @@
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">Web Development</h5>
-                <data value="88">88%</data>
+                <h5 class="h5">React</h5>
+                <data value="70">70%</data>
               </div>
 
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 88%;"></div>
+                <div class="skill-progress-fill" style="width: 70%;"></div>
               </div>
 
             </li>
@@ -580,12 +652,51 @@
             <li class="skills-item">
 
               <div class="title-wrapper">
-                <h5 class="h5">Application Development</h5>
-                <data value="82">82%</data>
+                <h5 class="h5">Node.js</h5>
+                <data value="65">65%</data>
               </div>
 
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 82%;"></div>
+                <div class="skill-progress-fill" style="width: 65%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">TypeScript</h5>
+                <data value="60">60%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 60%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Python</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Figma</h5>
+                <data value="85">85%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 85%;"></div>
               </div>
 
             </li>
@@ -669,43 +780,7 @@
           <ul class="project-list">
 
             <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-1.jpg" alt="E-commerce Platform" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">E-commerce Platform</h3>
-
-                <p class="project-category">Web development</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web design">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-3.jpg" alt="Corporate Identity" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Corporate Identity</h3>
-
-                <p class="project-category">Web design</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="#">
+              <a href="http://happyhappier.co.ke/" target="_blank">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -733,7 +808,7 @@
                   <img src="./assets/images/project-6.png" alt="E-Procurement Application" loading="lazy">
                 </figure>
 
-                <h3 class="project-title">E-Procurement System</h3>
+                <h3 class="project-title">E-Procurement System - Kinetics Technologies Internship</h3>
 
                 <p class="project-category">Applications</p>
 
@@ -741,7 +816,7 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="applications">
-              <a href="https://github.com/Mono-eyeddev/Invoice_automation_system" target="_blank">
+              <a href="https://github.com/Gigstaroche/Invoice_automation_system" target="_blank">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -759,7 +834,7 @@
             </li>
 
             <li class="project-item  active" data-filter-item data-category="web development">
-              <a href="https://github.com/Mono-eyeddev/Coffee-Website" target="_blank">
+              <a href="https://github.com/Gigstaroche/Coffee-Website" target="_blank">
 
                 <figure class="project-img">
                   <div class="project-item-icon-box">
@@ -772,6 +847,24 @@
                 <h3 class="project-title">Coffee Shop E-Commerce Website</h3>
 
                 <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="web design">
+              <a href="https://github.com/Gigstaroche/Portfolio-Website" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="Portfolio Website Design" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Personal Portfolio Website</h3>
+
+                <p class="project-category">Web design</p>
 
               </a>
             </li>
@@ -790,37 +883,37 @@
 
             <li class="clients-item">
               <a href="#">
-                <img src="./assets/images/logo-1-color.png" alt="client logo">
+                <img src="./assets/images/logo-1-color.svg" alt="Happy Happier">
               </a>
             </li>
 
             <li class="clients-item">
               <a href="#">
-                <img src="./assets/images/logo-2-color.png" alt="client logo">
+                <img src="./assets/images/logo-2-color.svg" alt="Kinetics Technologies">
               </a>
             </li>
 
             <li class="clients-item">
               <a href="#">
-                <img src="./assets/images/logo-3-color.png" alt="client logo">
+                <img src="./assets/images/logo-3-color.svg" alt="Creative Studio">
               </a>
             </li>
 
             <li class="clients-item">
               <a href="#">
-                <img src="./assets/images/logo-4-color.png" alt="client logo">
+                <img src="./assets/images/logo-4-color.svg" alt="Digital Solutions">
               </a>
             </li>
 
             <li class="clients-item">
               <a href="#">
-                <img src="./assets/images/logo-5-color.png" alt="client logo">
+                <img src="./assets/images/logo-5-color.svg" alt="E-Com Market">
               </a>
             </li>
 
             <li class="clients-item">
               <a href="#">
-                <img src="./assets/images/logo-6-color.png" alt="client logo">
+                <img src="./assets/images/logo-6-color.svg" alt="Innovate Labs">
               </a>
             </li>
 
@@ -848,172 +941,160 @@
 
           <ul class="blog-posts-list">
 
-            <li class="blog-post-item">
-              <a href="#">
+            <li class="blog-post-item" data-blog-item>
 
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Mastering JavaScript: From Basics to Advanced Concepts" loading="lazy">
-                </figure>
+              <figure class="blog-banner-box" data-blog-banner>
+                <img src="./assets/images/blog-1.jpg" alt="Mastering JavaScript: From Basics to Advanced Concepts" loading="lazy">
+              </figure>
 
-                <div class="blog-content">
+              <div class="blog-content">
 
-                  <div class="blog-meta">
-                    <p class="blog-category">JavaScript</p>
+                <div class="blog-meta">
+                  <p class="blog-category" data-blog-category>JavaScript</p>
 
-                    <span class="dot"></span>
+                  <span class="dot"></span>
 
-                    <time datetime="2024-12-15">Dec 15, 2024</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Mastering JavaScript: From Basics to Advanced Concepts</h3>
-
-                  <p class="blog-text">
-                    Dive deep into JavaScript fundamentals and advanced techniques for modern web development.
-                  </p>
-
+                  <time datetime="2024-12-15" data-blog-date>Dec 15, 2024</time>
                 </div>
 
-              </a>
+                <h3 class="h3 blog-item-title" data-blog-title>Mastering JavaScript: From Basics to Advanced Concepts</h3>
+
+                <p class="blog-text" data-blog-text>
+                  Dive deep into JavaScript fundamentals and advanced techniques for modern web development.
+                </p>
+
+              </div>
+
             </li>
 
-            <li class="blog-post-item">
-              <a href="#">
+            <li class="blog-post-item" data-blog-item>
 
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Building Modern Web Apps with Vue.js and Nuxt.js" loading="lazy">
-                </figure>
+              <figure class="blog-banner-box" data-blog-banner>
+                <img src="./assets/images/blog-2.jpg" alt="Building Modern Web Apps with Vue.js and Nuxt.js" loading="lazy">
+              </figure>
 
-                <div class="blog-content">
+              <div class="blog-content">
 
-                  <div class="blog-meta">
-                    <p class="blog-category">Vue.js</p>
+                <div class="blog-meta">
+                  <p class="blog-category" data-blog-category>Vue.js</p>
 
-                    <span class="dot"></span>
+                  <span class="dot"></span>
 
-                    <time datetime="2024-11-28">Nov 28, 2024</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Building Modern Web Apps with Vue.js and Nuxt.js</h3>
-
-                  <p class="blog-text">
-                    Learn how to create powerful, scalable web applications using Vue.js and the Nuxt.js framework.
-                  </p>
-
+                  <time datetime="2024-11-28" data-blog-date>Nov 28, 2024</time>
                 </div>
 
-              </a>
+                <h3 class="h3 blog-item-title" data-blog-title>Building Modern Web Apps with Vue.js and Nuxt.js</h3>
+
+                <p class="blog-text" data-blog-text>
+                  Learn how to create powerful, scalable web applications using Vue.js and the Nuxt.js framework.
+                </p>
+
+              </div>
+
             </li>
 
-            <li class="blog-post-item">
-              <a href="#">
+            <li class="blog-post-item" data-blog-item>
 
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="UI/UX Design Principles for Developers" loading="lazy">
-                </figure>
+              <figure class="blog-banner-box" data-blog-banner>
+                <img src="./assets/images/blog-3.jpg" alt="UI/UX Design Principles for Developers" loading="lazy">
+              </figure>
 
-                <div class="blog-content">
+              <div class="blog-content">
 
-                  <div class="blog-meta">
-                    <p class="blog-category">Design</p>
+                <div class="blog-meta">
+                  <p class="blog-category" data-blog-category>Design</p>
 
-                    <span class="dot"></span>
+                  <span class="dot"></span>
 
-                    <time datetime="2024-11-10">Nov 10, 2024</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">UI/UX Design Principles for Developers</h3>
-
-                  <p class="blog-text">
-                    Essential design principles every developer should know to create better user experiences.
-                  </p>
-
+                  <time datetime="2024-11-10" data-blog-date>Nov 10, 2024</time>
                 </div>
 
-              </a>
+                <h3 class="h3 blog-item-title" data-blog-title>UI/UX Design Principles for Developers</h3>
+
+                <p class="blog-text" data-blog-text>
+                  Essential design principles every developer should know to create better user experiences.
+                </p>
+
+              </div>
+
             </li>
 
-            <li class="blog-post-item">
-              <a href="#">
+            <li class="blog-post-item" data-blog-item>
 
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="The Future of Web Development: Trends to Watch" loading="lazy">
-                </figure>
+              <figure class="blog-banner-box" data-blog-banner>
+                <img src="./assets/images/blog-4.jpg" alt="The Future of Web Development: Trends to Watch" loading="lazy">
+              </figure>
 
-                <div class="blog-content">
+              <div class="blog-content">
 
-                  <div class="blog-meta">
-                    <p class="blog-category">Technology</p>
+                <div class="blog-meta">
+                  <p class="blog-category" data-blog-category>Technology</p>
 
-                    <span class="dot"></span>
+                  <span class="dot"></span>
 
-                    <time datetime="2024-10-25">Oct 25, 2024</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">The Future of Web Development: Trends to Watch</h3>
-
-                  <p class="blog-text">
-                    Exploring upcoming trends and technologies shaping the future of web development.
-                  </p>
-
+                  <time datetime="2024-10-25" data-blog-date>Oct 25, 2024</time>
                 </div>
 
-              </a>
+                <h3 class="h3 blog-item-title" data-blog-title>The Future of Web Development: Trends to Watch</h3>
+
+                <p class="blog-text" data-blog-text>
+                  Exploring upcoming trends and technologies shaping the future of web development.
+                </p>
+
+              </div>
+
             </li>
 
-            <li class="blog-post-item">
-              <a href="#">
+            <li class="blog-post-item" data-blog-item>
 
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="Optimizing Performance in Vue.js Applications" loading="lazy">
-                </figure>
+              <figure class="blog-banner-box" data-blog-banner>
+                <img src="./assets/images/blog-5.jpg" alt="Optimizing Performance in Vue.js Applications" loading="lazy">
+              </figure>
 
-                <div class="blog-content">
+              <div class="blog-content">
 
-                  <div class="blog-meta">
-                    <p class="blog-category">Performance</p>
+                <div class="blog-meta">
+                  <p class="blog-category" data-blog-category>Performance</p>
 
-                    <span class="dot"></span>
+                  <span class="dot"></span>
 
-                    <time datetime="2024-10-08">Oct 8, 2024</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">Optimizing Performance in Vue.js Applications</h3>
-
-                  <p class="blog-text">
-                    Best practices for building fast, efficient Vue.js applications that scale.
-                  </p>
-
+                  <time datetime="2024-10-08" data-blog-date>Oct 8, 2024</time>
                 </div>
 
-              </a>
+                <h3 class="h3 blog-item-title" data-blog-title>Optimizing Performance in Vue.js Applications</h3>
+
+                <p class="blog-text" data-blog-text>
+                  Best practices for building fast, efficient Vue.js applications that scale.
+                </p>
+
+              </div>
+
             </li>
 
-            <li class="blog-post-item">
-              <a href="#">
+            <li class="blog-post-item" data-blog-item>
 
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-6.jpg" alt="From Concept to Launch: Building Happy Happier" loading="lazy">
-                </figure>
+              <figure class="blog-banner-box" data-blog-banner>
+                <img src="./assets/images/blog-6.jpg" alt="From Concept to Launch: Building Happy Happier" loading="lazy">
+              </figure>
 
-                <div class="blog-content">
+              <div class="blog-content">
 
-                  <div class="blog-meta">
-                    <p class="blog-category">Case Study</p>
+                <div class="blog-meta">
+                  <p class="blog-category" data-blog-category>Case Study</p>
 
-                    <span class="dot"></span>
+                  <span class="dot"></span>
 
-                    <time datetime="2024-09-20">Sep 20, 2024</time>
-                  </div>
-
-                  <h3 class="h3 blog-item-title">From Concept to Launch: Building Happy Happier</h3>
-
-                  <p class="blog-text">
-                    A detailed case study of creating the Happy Happier cleaning services platform.
-                  </p>
-
+                  <time datetime="2024-09-20" data-blog-date>Sep 20, 2024</time>
                 </div>
 
-              </a>
+                <h3 class="h3 blog-item-title" data-blog-title>From Concept to Launch: Building Happy Happier</h3>
+
+                <p class="blog-text" data-blog-text>
+                  A detailed case study of creating the Happy Happier cleaning services platform.
+                </p>
+
+              </div>
+
             </li>
 
           </ul>
@@ -1070,6 +1151,51 @@
 
       </div>
 
+      <!--
+        - blog modal
+      -->
+
+      <div class="modal-container" data-blog-modal-container>
+
+        <div class="overlay" data-blog-overlay></div>
+
+        <section class="blog-modal">
+
+          <button class="modal-close-btn" data-blog-modal-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+          <div class="modal-img-wrapper">
+            <figure class="modal-blog-banner-box">
+              <img src="./assets/images/blog-1.jpg" alt="Blog Banner" data-blog-modal-img>
+            </figure>
+          </div>
+
+          <div class="modal-content">
+
+            <div class="blog-meta">
+              <p class="blog-category" data-blog-modal-category>JavaScript</p>
+              <span class="dot"></span>
+              <time data-blog-modal-date datetime="2024-12-15">Dec 15, 2024</time>
+            </div>
+
+            <h4 class="h3 modal-title" data-blog-modal-title>Mastering JavaScript: From Basics to Advanced Concepts</h4>
+
+            <div data-blog-modal-text>
+              <p>
+                JavaScript is the backbone of modern web development. In this comprehensive guide, we'll explore everything from basic syntax and data types to advanced concepts like closures, prototypes, and asynchronous programming. Whether you're a beginner or looking to deepen your understanding, this article will provide valuable insights into mastering JavaScript.
+              </p>
+              <p>
+                We'll cover topics such as variable declarations, functions, objects, arrays, and the DOM manipulation. You'll learn about ES6 features, promises, async/await, and how to write clean, maintainable code. By the end of this guide, you'll have a solid foundation to build complex web applications.
+              </p>
+            </div>
+
+          </div>
+
+        </section>
+
+      </div>
+
 
 
 
@@ -1087,8 +1213,8 @@
         <section class="mapbox" data-mapbox>
           <figure>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.817!2d36.8219!3d-1.2864!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1172d84d49a7%3A0xf7cf0254b297924c!2sNairobi%2C%20Kenya!5e0!3m2!1sen!2s!4v1647608789441!5m2!1sen!2s"
-              width="400" height="300" loading="lazy"></iframe>
+              src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d1124.9089534435686!2d36.716149637148845!3d-1.2684949762273263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sroundabou%20uthiru!5e1!3m2!1sen!2ske!4v1763029257303!5m2!1sen!2ske"
+              width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </figure>
         </section>
 
@@ -1096,15 +1222,37 @@
 
           <h3 class="h3 form-title">Contact Form</h3>
 
-          <form action="#" class="form" data-form>
+          <!-- Success Message -->
+          <div class="form-success-message" id="form-success" style="display: none;">
+            <div class="success-icon">
+              <ion-icon name="checkmark-circle-outline"></ion-icon>
+            </div>
+            <h4 class="success-title">Message Sent Successfully!</h4>
+            <p class="success-text">
+              Thank you for reaching out! I've received your message and will get back to you within 24 hours.
+              <br><small style="color: var(--yellow); font-style: italic;">*On localhost: simulated success - will work on live site</small>
+            </p>
+            <button class="btn btn-secondary" onclick="resetForm()">Send Another Message</button>
+          </div>
+
+          <form action="https://formspree.io/f/mnnljgza" method="POST" class="form" data-form id="contact-form">
 
             <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <div class="form-group">
+                <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+                <div class="error-message" id="name-error"></div>
+              </div>
 
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+              <div class="form-group">
+                <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+                <div class="error-message" id="email-error"></div>
+              </div>
             </div>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+            <div class="form-group">
+              <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input minlength="10"></textarea>
+              <div class="error-message" id="message-error"></div>
+            </div>
 
             <button class="form-btn" type="submit" disabled data-form-btn>
               <ion-icon name="paper-plane"></ion-icon>
