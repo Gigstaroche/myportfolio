@@ -6,36 +6,20 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Felix Kipng'etich Mutai">
-  <meta name="description" content="Felix Kipng'etich Mutai - IT Professional & Full-Stack Developer Portfolio">
-  <title>Felix Kipng'etich Mutai - IT Professional & Developer | MutaiDev</title>
+  <meta name="description" content="Felix Kipng'etich Mutai - Frontend Engineer (Web Platforms & UI) Portfolio">
+  <title>Felix Kipng'etich Mutai - Frontend Engineer (Web Platforms & UI) | MutaiDev</title>
 
-  <!--
-    - favicon
-  -->
   <link rel="icon" type="image/svg+xml" href="./assets/images/favicon.svg">
-  <link rel="shortcut icon" href="./assets/images/favicon.svg">
-
-  <!--
-    - custom css link
-  -->
   <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!--
-    - google font link
-  -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 </head>
 
-<body>
-
-  <!--
-    - #MAIN
-  -->
+<body data-theme="dark">
 
   <main>
-    <!-- SIDEBAR -->
     <aside class="sidebar" data-sidebar>
 
       <div class="sidebar-info">
@@ -47,7 +31,7 @@
         <div class="info-content">
           <h1 class="name" title="Felix Kipng'etich Mutai - MutaiDev">Felix Kipng'etich Mutai</h1>
 
-          <p class="title">IT Professional & Full-Stack Developer</p>
+          <p class="title">Frontend Engineer (Web Platforms & UI)</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -234,7 +218,10 @@
 
         <section class="about-text">
           <p>
-            IT Professional and Full-Stack Developer from Nairobi, Kenya, specializing in web development, software testing, and client support with excellent communication skills.
+            Frontend Engineer passionate about building modern web applications with Vue.js, JavaScript, and cutting-edge technologies. Based in Nairobi, Kenya, I specialize in creating intuitive user interfaces, implementing robust frontend architectures, and delivering high-quality web experiences.
+          </p>
+          <p>
+            With expertise in JavaScript frameworks, UI/UX implementation, and software testing, I love working on challenging technical problems that push the boundaries of web development. I thrive in collaborative environments and am always excited to learn and apply new technologies.
           </p>
         </section>
 
@@ -243,11 +230,64 @@
         -->
 
         <section class="resume-download">
-          <a href="./assets/Carriculum vitae.pdf" download="Felix_Mutai_CV.pdf" class="btn btn-primary">
+          <button onclick="openResumeModal()" class="btn btn-primary">
             <ion-icon name="download-outline"></ion-icon>
             Download Resume
-          </a>
+          </button>
         </section>
+        
+        <!-- Resume Download Modal -->
+        <div id="resume-modal" class="resume-modal">
+          <div class="resume-modal-content">
+            <button class="resume-modal-close" onclick="closeResumeModal()">
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+            
+            <div class="resume-modal-header">
+              <h3>📄 Download Resume</h3>
+              <p>Please provide your details to download my professional resume</p>
+            </div>
+            
+            <form id="resume-form" class="resume-form">
+              <div class="resume-input-group">
+                <input type="text" id="resume-name" placeholder="Your full name *" required>
+                <input type="email" id="resume-email" placeholder="Your email address *" required>
+              </div>
+              
+              <select id="resume-purpose" required>
+                <option value="" disabled selected>Purpose of download *</option>
+                <option value="Job Interview">🎯 Job Interview</option>
+                <option value="Project Collaboration">🤝 Project Collaboration</option>
+                <option value="Freelance Opportunity">💼 Freelance Opportunity</option>
+                <option value="General Reference">📋 General Reference</option>
+                <option value="Networking">🌐 Networking</option>
+              </select>
+              
+              <textarea id="resume-company" placeholder="Company/Organization (optional)" rows="2"></textarea>
+              
+              <div class="resume-terms">
+                <label>
+                  <input type="checkbox" id="resume-agree" required>
+                  <span>I agree to use this resume for legitimate professional purposes only</span>
+                </label>
+              </div>
+              
+              <button type="submit" class="btn btn-primary resume-submit-btn" disabled>
+                <ion-icon name="shield-checkmark-outline"></ion-icon>
+                Verify & Download
+              </button>
+            </form>
+            
+            <div class="resume-security-info">
+              <p>🔒 <strong>Why I ask:</strong></p>
+              <ul>
+                <li>Professional networking</li>
+                <li>Download tracking</li>
+                <li>Spam prevention</li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
 
         <!--
@@ -260,17 +300,17 @@
 
           <ul class="service-list">
 
-            <li class="service-item" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://source.unsplash.com/600x400/?coding,development'); background-size: cover; background-position: center;">
+            <li class="service-item" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://source.unsplash.com/600x400/?vue,javascript'); background-size: cover; background-position: center;">
 
               <div class="service-icon-box">
-                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+                <img src="./assets/images/icon-dev.svg" alt="Frontend development icon" width="40">
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">Full-Stack Development</h4>
+                <h4 class="h4 service-item-title">Frontend Development</h4>
 
                 <p class="service-item-text">
-                  Modern web applications with JavaScript, Vue.js, and other frameworks.
+                  Modern web applications with Vue.js, JavaScript, and responsive UI/UX implementation.
                 </p>
               </div>
 
@@ -286,24 +326,7 @@
                 <h4 class="h4 service-item-title">Software Testing & QA</h4>
 
                 <p class="service-item-text">
-                  Comprehensive testing and QA for web and mobile applications.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://source.unsplash.com/600x400/?customer,support'); background-size: cover; background-position: center;">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/icon-design.svg
-                " alt="customer service icon" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Customer Service & Support</h4>
-
-                <p class="service-item-text">
-                  Professional client communication and technical support.
+                  Comprehensive testing strategies for web and mobile applications with focus on quality assurance.
                 </p>
               </div>
 
@@ -316,10 +339,26 @@
               </div>
 
               <div class="service-content-box">
-                <h4 class="h4 service-item-title">IT Systems & Consulting</h4>
+                <h4 class="h4 service-item-title">Web Solutions & Consulting</h4>
 
                 <p class="service-item-text">
-                  IT system administration and technology consulting.
+                  Technical consulting and web solution architecture for modern development challenges.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://source.unsplash.com/600x400/?customer,support'); background-size: cover; background-position: center;">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg" alt="customer service icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Technical Support</h4>
+
+                <p class="service-item-text">
+                  Professional technical communication and client support when needed.
                 </p>
               </div>
 
@@ -427,58 +466,188 @@
 
           <div class="title-wrapper">
             <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <ion-icon name="person-outline"></ion-icon>
             </div>
 
-            <h3 class="h3">Education</h3>
+            <h3 class="h3">Professional Summary</h3>
+          </div>
+
+          <div class="content-card">
+            <p class="timeline-text">
+              Frontend Engineer (Web Platforms & UI) with hands-on experience building, testing, and maintaining user-facing web applications in collaborative team environments. Delivered a full-stack Vue.js web application during an internship by learning the framework specifically for the project and applying it in production. Brings a strong quality-first mindset from extensive software testing experience, with attention to usability, accessibility, performance, and edge cases. Comfortable working remotely and asynchronously, with a strong interest in documentation-driven workflows, knowledge-centric tools, and continuous learning.
+            </p>
+          </div>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">Technical Skills</h3>
+
+          <div class="skills-category">
+            <h4 class="h4 skills-category-title">Frontend & UI</h4>
+            <ul class="skills-list">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>Vue.js (production project experience)</li>
+              <li>Responsive Design</li>
+            </ul>
+          </div>
+
+          <div class="skills-category">
+            <h4 class="h4 skills-category-title">Web Platforms & APIs</h4>
+            <ul class="skills-list">
+              <li>REST APIs</li>
+              <li>Node.js (foundational)</li>
+              <li>Frontend–Backend Integration</li>
+            </ul>
+          </div>
+
+          <div class="skills-category">
+            <h4 class="h4 skills-category-title">Databases</h4>
+            <ul class="skills-list">
+              <li>MySQL</li>
+              <li>SQLite</li>
+            </ul>
+          </div>
+
+          <div class="skills-category">
+            <h4 class="h4 skills-category-title">Testing & Quality</h4>
+            <ul class="skills-list">
+              <li>Exploratory Testing</li>
+              <li>Regression Testing</li>
+              <li>Bug Tracking</li>
+              <li>uTest</li>
+              <li>Testlio</li>
+            </ul>
+          </div>
+
+          <div class="skills-category">
+            <h4 class="h4 skills-category-title">UI/UX & Design</h4>
+            <ul class="skills-list">
+              <li>Figma</li>
+              <li>Canva</li>
+              <li>Adobe Creative Suite</li>
+            </ul>
+          </div>
+
+          <div class="skills-category">
+            <h4 class="h4 skills-category-title">Tools & Environments</h4>
+            <ul class="skills-list">
+              <li>Git</li>
+              <li>Linux</li>
+              <li>Windows</li>
+              <li>XAMPP</li>
+            </ul>
+          </div>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Professional Experience</h3>
           </div>
 
           <ol class="timeline-list">
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Bachelor of Information Technology - JKUAT</h4>
+              <h4 class="h4 timeline-item-title">Web Application Development Intern</h4>
 
-              <span>2022 — Present</span>
+              <span>Kinetics Technologies | 2025 (Short-term)</span>
 
               <p class="timeline-text">
-                Advanced studies in information technology, software development, and system analysis. Focusing on cybersecurity, web technologies, and IT systems management that support customer service excellence.
+                Collaborated with a cross-functional team to design and deliver a full-stack web application using Vue.js, REST APIs, and a relational database.
+              </p>
+              <p class="timeline-text">
+                Learned Vue.js specifically for this project and applied it to build component-based user interfaces and frontend logic in a production environment.
+              </p>
+              <p class="timeline-text">
+                Integrated frontend components with backend services, ensuring reliable data flow, validation, and error handling.
+              </p>
+              <p class="timeline-text">
+                Participated in code reviews, debugging sessions, and iterative feature improvements.
+              </p>
+              <p class="timeline-text">
+                Applied software testing experience to identify usability issues, edge cases, and regressions early in the development cycle.
               </p>
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Diploma in Information Technology - JKUAT</h4>
+              <h4 class="h4 timeline-item-title">IT Systems Intern</h4>
 
-              <span>2020 — 2022</span>
+              <span>Ananda Marga Relief Team (AMURT), Nairobi | Feb 2022 – May 2023</span>
 
               <p class="timeline-text">
-                Foundation studies in computer systems, programming, and IT infrastructure. Built strong technical skills that enhance customer support capabilities and system troubleshooting.
+                Supported and maintained internal web-based systems used by both technical and non-technical staff.
+              </p>
+              <p class="timeline-text">
+                Assisted with system workflows including scheduling, data management, and documentation processes.
+              </p>
+              <p class="timeline-text">
+                Contributed to operational reliability by improving system usability and task efficiency.
               </p>
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">KCSE Certificate - Chebilat High School</h4>
+              <h4 class="h4 timeline-item-title">Web Developer (Freelance / Self-Employed)</h4>
 
-              <span>2016 — 2019</span>
+              <span>Remote | Apr 2021 – Present</span>
 
               <p class="timeline-text">
-                Completed secondary education in Sotik, building strong foundational skills in communication and problem-solving.
+                Design and develop responsive websites with a strong focus on usability, clarity, and performance.
+              </p>
+              <p class="timeline-text">
+                Deliver end-to-end solutions including UI design, frontend development, deployment, and maintenance.
+              </p>
+              <p class="timeline-text">
+                Collaborate directly with clients to translate requirements into intuitive user interfaces.
               </p>
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Cybersecurity Certification - Cisco</h4>
+              <h4 class="h4 timeline-item-title">Software Tester</h4>
 
-              <span>2021</span>
+              <span>uTest | Oct 2019 – Present</span>
 
               <p class="timeline-text">
-                Professional certification in cybersecurity practices, enhancing technical knowledge for secure customer data handling.
+                Conduct exploratory, functional, and usability testing on global web and mobile applications.
+              </p>
+              <p class="timeline-text">
+                Identify defects, document clear bug reports, and collaborate with distributed teams.
+              </p>
+              <p class="timeline-text">
+                Contribute to improved frontend reliability and user experience.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Software Tester / Developer</h4>
+
+              <span>Testlio | Apr 2021 – Present</span>
+
+              <p class="timeline-text">
+                Perform regression and exploratory testing across multiple platforms.
+              </p>
+              <p class="timeline-text">
+                Work closely with developers to reproduce, diagnose, and verify fixes.
+              </p>
+              <p class="timeline-text">
+                Support release stability and product quality.
               </p>
 
             </li>
@@ -491,71 +660,63 @@
 
           <div class="title-wrapper">
             <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+              <ion-icon name="school-outline"></ion-icon>
             </div>
 
-            <h3 class="h3">Experience</h3>
+            <h3 class="h3">Education</h3>
           </div>
 
           <ol class="timeline-list">
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Freelancer & Client Support - Self-Employed</h4>
+              <h4 class="h4 timeline-item-title">Bachelor of Information Technology (Ongoing)</h4>
 
-              <span>April 2021 — Present</span>
-
-              <p class="timeline-text">
-                Handle client inquiries via website, email, and messaging platforms. Clarify client needs, provide guidance on website usage and updates, and offer post-service support. Successfully managed multiple clients with clear communication and timely responses.
-              </p>
+              <span>Jomo Kenyatta University of Agriculture and Technology (JKUAT)</span>
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Software Tester - uTest (Remote)</h4>
+              <h4 class="h4 timeline-item-title">Diploma in Information Technology</h4>
 
-              <span>October 2019 — Present</span>
-
-              <p class="timeline-text">
-                Participate in testing projects, reporting issues accurately with attention to detail. Developed understanding of user behavior and structured documentation skills that enhance client communication capabilities.
-              </p>
+              <span>Jomo Kenyatta University of Agriculture and Technology (JKUAT)</span>
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Web Application Development Intern - Kinetics Technologies</h4>
+              <h4 class="h4 timeline-item-title">KCSE Certificate</h4>
 
-              <span>2024 (3 Months)</span>
+              <span>Chebilat High School, Sotik</span>
 
-              <p class="timeline-text">
-                Assisted internal teams with testing and reviewing web-based systems. Identified usability issues and reported them clearly for improvement, developing customer-focused mindset.
-              </p>
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="ribbon-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Certifications</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Cybersecurity – Cisco</h4>
 
             </li>
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">IT & User Support Intern - AMURT, Nairobi</h4>
-
-              <span>February 2022 — May 2023</span>
-
-              <p class="timeline-text">
-                Assisted staff and users with system access, scheduling, and record management. Responded to inquiries and routine support needs while maintaining accurate documentation of user information.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Software Tester - Testlio (Remote)</h4>
-
-              <span>Short-Term Engagement</span>
-
-              <p class="timeline-text">
-                Participated in testing projects on digital platforms, developing accuracy and attention to detail in reporting findings that support quality user experiences.
-              </p>
+              <h4 class="h4 timeline-item-title">Diploma in Information Technology – JKUAT</h4>
 
             </li>
 
@@ -565,86 +726,22 @@
 
         <section class="skill">
 
-          <h3 class="h3 skills-title">My skills</h3>
+          <h3 class="h3 skills-title">Languages</h3>
 
           <ul class="skills-list content-card">
 
             <li class="skills-item">
-
               <div class="title-wrapper">
-                <h5 class="h5">Web Development</h5>
-                <data value="88">88%</data>
+                <h5 class="h5">English</h5>
+                <span>Professional Proficiency</span>
               </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 88%;"></div>
-              </div>
-
             </li>
 
             <li class="skills-item">
-
               <div class="title-wrapper">
-                <h5 class="h5">JavaScript & Frameworks</h5>
-                <data value="82">82%</data>
+                <h5 class="h5">Kiswahili</h5>
+                <span>Native Proficiency</span>
               </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 82%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Software Testing & QA</h5>
-                <data value="85">85%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Customer Service</h5>
-                <data value="90">90%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">IT Systems & Support</h5>
-                <data value="85">85%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 85%;"></div>
-              </div>
-
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Communication & Documentation</h5>
-                <data value="92">92%</data>
-              </div>
-
-              <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 92%;"></div>
-              </div>
-
             </li>
 
           </ul>
@@ -1187,18 +1284,42 @@
         <section class="contact-form">
 
           <h3 class="h3 form-title">Contact Form</h3>
+          
+          <div id="form-status" class="form-status"></div>
 
-          <form action="https://formspree.io/f/xpznqjqv" method="POST" class="form" data-form>
+          <form action="https://api.web3forms.com/submit" method="POST" id="contact-form" class="form" data-form>
+
+            <!-- Web3Forms Access Key -->
+            <input type="hidden" name="access_key" value="d1ca067d-1042-41ff-b61a-bc522ff11064">
+            
+            <!-- Optional: Subject line -->
+            <input type="hidden" name="subject" value="New Contact from Portfolio Website">
+            
+            <!-- Optional: From name for better email formatting -->
+            <input type="hidden" name="from_name" value="Portfolio Contact Form">
+            
+            <!-- Anti-spam honeypot -->
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
             <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="text" name="name" class="form-input" placeholder="Full name" required data-form-input>
 
               <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
             </div>
 
+            <select name="reason" class="form-input" required data-form-input>
+              <option value="" disabled selected>Reason for contacting *</option>
+              <option value="Job Opportunity">💼 Job Opportunity</option>
+              <option value="Freelance Project">🚀 Freelance Project</option>
+              <option value="Collaboration">🤝 Collaboration</option>
+              <option value="Technical Question">💻 Technical Question</option>
+              <option value="General Inquiry">📞 General Inquiry</option>
+              <option value="Other">📝 Other</option>
+            </select>
+
             <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
 
-            <button class="form-btn" type="submit" disabled data-form-btn>
+            <button class="form-btn" type="submit" id="submit-btn" data-form-btn>
               <ion-icon name="paper-plane"></ion-icon>
               <span>Send Message</span>
             </button>
@@ -1218,14 +1339,7 @@
 
 
 
-  <!--
-    - custom js link
-  -->
   <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
