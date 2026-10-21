@@ -1,0 +1,16 @@
+<svg width="120" height="40" viewBox="0 0 120 40" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="creativeGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF6B6B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#EE5A52;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Creative Studio Logo -->
+  <circle cx="15" cy="20" r="12" fill="url(#creativeGradient)"/>
+  <path d="M8 20 L15 12 L22 20 L15 28 Z" fill="white"/>
+  <circle cx="15" cy="20" r="3" fill="url(#creativeGradient)"/>
+
+  <text x="35" y="18" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#2c3e50">CREATIVE</text>
+  <text x="35" y="30" font-family="Arial, sans-serif" font-size="10" fill="#e74c3c">STUDIO</text>
+</svg>

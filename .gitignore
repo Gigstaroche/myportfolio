@@ -1,0 +1,40 @@
+# Operating System Files
+.DS_Store
+Thumbs.db
+
+# Editor Files
+.vscode/
+.idea/
+*.sublime-*
+
+# Temporary Files
+*.tmp
+*.temp
+*.log
+
+# Cache Files
+*.cache
+.sass-cache/
+
+# Node Modules (if using npm/node tools)
+node_modules/
+
+# Backup Files
+*.bak
+*.backup
+*~
+
+# Compiled Files
+*.min.js.map
+*.min.css.map
+
+# Local Environment Files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Build Files
+build/
+dist/
